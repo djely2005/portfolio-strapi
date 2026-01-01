@@ -491,6 +491,8 @@ export interface ApiCollaboratorCollaborator
     portfolio: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     role: Schema.Attribute.String;
+    type: Schema.Attribute.Enumeration<['people', 'compagny']> &
+      Schema.Attribute.DefaultTo<'people'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

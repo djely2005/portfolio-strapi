@@ -28,6 +28,14 @@
     },
     "portfolio": {
       "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "default": "people",
+      "enum": [
+        "people",
+        "compagny"
+      ]
     }
   }
 }
